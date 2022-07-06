@@ -1,0 +1,18 @@
+.review{
+    min-height: 80vh;
+    &-header{
+        margin-bottom: 6rem;
+    }
+    &-card{
+        width: 15rem;
+        height: 20rem;
+        background: linear-gradient(
+            98deg,
+            rgba(191, 201, 202, 1) 0%,
+            rgba(229, 231, 233, 1) 100%
+          );
+        &-img{
+            transform: translateY(-40px);
+        }
+    }
+}

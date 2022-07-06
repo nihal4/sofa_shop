@@ -1,0 +1,102 @@
+.navbar{
+    background: linear-gradient(
+        98deg,
+        rgba(191, 201, 202, 1) 0%,
+        rgba(229, 231, 233, 1) 100%
+      );
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-brand{
+        text-transform: uppercase;
+        color: $font-color;
+        font-size: 1.5em;
+        &:hover{
+            color: $font-color;
+        }
+    }
+    &-nav{
+        display: flex;
+        gap: .8rem;
+    }
+}
+
+.collapse{
+    flex-grow: 0;
+}
+.nav{
+    &-item{
+        padding: 0;
+        margin: 0;
+    }
+    &-link{
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        color: $font-color;
+        display: inline-block;
+        &:hover{
+            color: $font-color;
+        }
+        &:focus{
+            color: $font-color;
+        }
+    }
+}
+.login{
+    background-color: $btn-color2;
+    border-radius: 50px;
+    transform: scale(1);
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(1);
+    }
+}
+.create{
+    background-color: $btn-color1;
+    border-radius: 50px;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(1);
+    }
+}
+
+.navbar-toggler{
+    background-color: $font-color;
+    padding: 2px 13px;
+}
+.burger{
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:$tablet){
+    .navbar{
+        background-color: #EFEFEF;
+
+        &-nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+        }
+    }
+    .login{
+        text-align: center;
+        width: 150px;
+    }
+    .create{
+        text-align: center;
+        width: 150px;
+    }
+}

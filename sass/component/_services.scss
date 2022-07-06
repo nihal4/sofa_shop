@@ -1,0 +1,42 @@
+.service {
+  min-height: 50vh;
+  &-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+
+    &-item {
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  border: none;
+  &-img-top {
+    width: 80px;
+  }
+  &-text{
+    text-align: center;
+  }
+  &-head{
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+@media (max-width:$tablet) {
+    .service-list{
+        flex-direction: column;
+    }
+}

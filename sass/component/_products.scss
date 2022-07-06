@@ -1,0 +1,24 @@
+.product{
+    min-height: 110vh;
+
+    &-list{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+    &-img{
+        width: 250px;
+    }
+}
+@media (max-width:$tablet) {
+    .product-list{
+        flex-direction: column;
+    }
+}
